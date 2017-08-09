@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://www.2lewan.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>爱乐玩网页游戏平台-爱乐玩网页游戏平台</title>
+	<meta name="keywords" content="网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,乔峰传,盛世三国2">
+	<meta name="description"
+		  content="jinlaiwan网页游戏平台是中国最大最知名的专业网页游戏运营平台，致力于为广大的游戏用户提供最好玩、最优质、最热门的网页游戏！想知道最好玩的网页游戏都在哪儿吗？就jinlaiwan！你梦幻之旅的起源地！">
+	<link rel="shortcut icon" href="http://www.2lewan.com/Public/wancms3/images/favicon.ico">
+	<link href="index/css/css.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="index/stats" charset="UTF-8"></script>
+	<script src="pay/jquery.1.7.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div style="display: none; position: absolute; " class="">
+	<div class="aui_outer">
+		<table class="aui_border">
+			<tbody>
+			<tr>
+				<td class="aui_nw"></td>
+				<td class="aui_n"></td>
+				<td class="aui_ne"></td>
+			</tr>
+			<tr>
+				<td class="aui_w"></td>
+				<td class="aui_c">
+					<div class="aui_inner">
+						<table class="aui_dialog">
+							<tbody>
+							<tr>
+								<td colspan="2" class="aui_header">
+									<div class="aui_titleBar">
+										<div class="aui_title" style="cursor: move; "></div>
+										<a class="aui_close" href="javascript:/*artDialog*/;" style="">×</a></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="aui_icon" style="display: none; ">
+									<div class="aui_iconBg"
+										 style="background-image: none; background-position: initial initial; background-repeat: initial initial; "></div>
+								</td>
+								<td class="aui_main" style="width: auto; height: auto; ">
+									<div class="aui_content" style="padding: 20px 25px; "></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="aui_footer">
+									<div class="aui_buttons" style="display: none; "></div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+				<td class="aui_e"></td>
+			</tr>
+			<tr>
+				<td class="aui_sw"></td>
+				<td class="aui_s"></td>
+				<td class="aui_se" style="cursor: se-resize; "></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="top">
+	<div id="topBox">
+		<div class="top ">
+			<script type="text/javascript">/*function addCookie()
+{
+    if (document.all)
+    {
+       window.external.addFavorite('http://www.2lewan.com','网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,乔峰传,盛世三国2');
+    }
+    else if (window.sidebar)
+    {
+       window.sidebar.addPanel('网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,乔峰传,盛世三国2', 'http://www.2lewan.com', "");
+    }
+
+}
+
+
+
+function setHomepage()
+{
+
+    if (document.all)
+    {
+        document.body.style.behavior='url(#default#homepage)';
+
+        document.body.setHomePage('http://www.2lewan.com');
+    }
+    else if (window.sidebar)
+    {
+        if(window.netscape)
+        {
+            try
+            {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }
+            catch (e)
+            {
+                alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" );
+            }
+        }
+
+        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+
+        prefs.setCharPref('browser.startup.homepage','http://www.2lewan.com');
+
+    }
+
+}*/
+			//添加收藏夹
+			function addBookmark(url, title) {
+				var URL = url || window.location.href;
+				var title = title || document.title;
+
+				try {
+					window.external.AddFavorite(url, title);          //ie
+				} catch (e) {
+					try {
+						window.sidebar.addPanel(title, URL, "");       //firefox
+					} catch (e) {
+						alert("加入收藏失败，请使用Ctrl+D进行添加");   //chrome opera safari
+						return false;
+					}
+				}
+			}
+
+
+			//设为首页
+			function setHomepage(url, title) {
+				if (document.all) {
+					document.body.style.behavior = 'url(#default#homepage)';
+					document.body.setHomePage(url);
+				}
+				else if (window.sidebar) {
+					if (window.netscape) {
+						try {
+							netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+						}
+						catch (e) {
+							alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+						}
+					}
+					var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+					prefs.setCharPref(title, url);
+				}
+			}
+			</script>
+			<div class="top-l left" style="">
+				<ul><!--<li class="syBtn"><a href="javascript:setHomepage();" style="color:#646464;" >设为首页</a></li>-->
+					<li class="syBtn"><a href="javascript:;" style="color:#646464;">设为首页</a></li>
+					<li class="pl"></li>
+					<!--<li class="scBtn"><a href="javascript:addCookie();" style="color:#646464;" hidefocus="”true”">加入收藏</a></li>-->
+					<li class="scBtn"><a href="javascript:" style="color:#646464;" hidefocus="”true”">加入收藏</a></li>
+				</ul>
+			</div>
+			<div class="top-r right"><a href="javascript:" hidefocus="”true”">防沉迷系统</a><span
+					class="pl"></span><a href="javascript:"
+										 hidefocus="”true”">适龄提示:<span style="color:#ff6600;">18+</span> 家长监护系统</a>
+				<div class="site_nav"><a href="javascript:" hidefocus="”true”"><img
+						src="./index/allgameBtn.png" alt="网页游戏"></a><!--游戏下拉列表--></div>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<style>
+
+			#banner dl {
+
+				overflow: hidden;
+
+				zoom: 1;
+
+				width: 999px;
+
+				margin: 0 auto
+
+			}
+
+			#banner {
+
+				height: 88px;
+
+				margin: 0 auto;
+
+				background: #fff
+
+			}
+
+			#banner dt {
+
+				width: 283px;
+
+				height: 88px;
+
+				float: left
+
+			}
+
+			#banner dd {
+
+				width: 716px;
+
+				height: 88px;
+
+				float: right
+
+			}
+		</style>
+		<dl>
+			<dt style="text-align:left;"><a href="javascript:"><img src="images/logo.png" style="margin-top: 10px; width: 220px"></a></dt>
+			<dt style="text-align:left;"><a href="javascript:" target="_blank"><img
+					src="index/images/970-100.png" width="700" height="90"></a></dt>
+		</dl>
+	</div>
+	<div id="navbox" style="background-color: #ee8601">
+		<div id="nav">
+			<ul id="guo">
+				<li class="on"><a href="./index.html"><strong><span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span></strong></a></li>
+				<li class="nor"><a href="./关于我们.html"><strong><span>用户中心</span></strong></a></li>
+				<li class="nor"><a href="./资讯中心.html"><strong><span>资讯中心</span></strong></a></li>
+				<li class="nor"><a href="./充值.html"><strong><span>充值中心</span></strong></a></li>
+				<li class="nor"><a href="./客服中心.html"><strong><span>客服中心</span></strong></a></li>
+				</li>
+			</ul>
+		</div>
+		<style>
+
+			#nav {
+
+				width: 965px;
+
+				height: 40px;
+
+				margin: 0 auto;
+
+				overflow: hidden;
+
+				zoom: 1;
+
+				position: relative
+
+			}
+
+			#nav ul {
+
+				overflow: hidden;
+
+				zoom: 1;
+
+				margin-left: -2px;
+
+				width: 1100px
+
+			}
+
+			#nav li {
+
+				float: left;
+
+				overflow: hidden;
+
+				margin-left: -2px
+
+			}
+
+			#nav li a {
+
+				font: bold 16px/47px "微软雅黑", "宋体";
+
+				height: 47px;
+
+				display: block;
+
+				color: #fff;
+
+				text-decoration: none;
+
+				float: left;
+
+				position: relative;
+
+				margin-top: -5px
+
+			}
+
+			#nav li.on a, #nav li a:hover {
+
+				/*	background: url("../images/nav.gif") no-repeat 2px 5px;*/
+				background: #ffa128;
+				color: #fff
+
+			}
+
+			#nav li.no {
+
+				background: 0
+
+			}
+
+			#nav li a strong {
+
+				display: block;
+
+				height: 28px;
+
+				overflow: hidden;
+
+				zoom: 1;
+
+				width: 126px;
+
+				background: url() no-repeat 125px 0;
+
+				padding-top: 15px;
+
+				line-height: 20px;
+
+				text-align: center;
+
+				cursor: pointer
+
+			}
+		</style>
+	</div>
+</div>
+<script src="index/lr_ad.js" type="text/javascript"></script>
+<link href="index/css/index.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="index/css/index9.css" rel="stylesheet">
+<div id="wrap">
+	<div id="container">
+		<!--<div id="content_1">
+			<div id="login">&lt;!&ndash; 登录前 &ndash;&gt;
+				<div id="login_1"><a target="_blank" title="立即注册" href="http://www.2lewan.com/accounts/register"></a>
+				</div>
+				<form method="post" id="login_box" name="myform"><input type="hidden" name="forward" id="forward"
+																		value="/">
+					<div id="login_2">
+						<dl>
+							<dt>
+							<div class="admname"><input type="text" id="user_name" name="username" value=""
+														placeholder="登录帐号"></div>
+							<div class="admpsd"><input name="" type="password" value="" class="inputText_1"
+													   id="user_pwd" placeholder="登录密码"></div>
+							</dt>
+							<dd><input type="checkbox" name="saveuser" id="saveuser" value="1" checked="check"><span>记住登录状态</span><a
+									href="http://www.2lewan.com/accounts/forget_password">忘记密码</a></dd>
+						</dl>
+					</div>
+					<p class="login-ac log-btn-wrap"><input id="log_b" class="log-btn-login" type="button" value=""
+															name="dosubmit"></p></form>
+			</div>&lt;!&ndash; 登陆后 &ndash;&gt;
+			<div class="login2" id="loginafter" style="display:none;">
+				<div class="login21">
+					<div class="login212 fl">
+						<div class="loginName"><span class="col5" id="username"><font>尊敬的：</font></span><a
+								href="http://www.2lewan.com/accounts/loginout" id="logOut">[退出]</a></div>
+						<em style="display:none;">余额：<span id="money"><font>null</font>平台币</span><i>|</i><a
+								href="http://www.2lewan.com/pay">立即充值</a></em></div>
+				</div>
+				<div class="login22">
+					<div class="login221"><a href="http://www.2lewan.com/members"
+											 class="yhzxBtn"><em></em><span>用户中心</span></a></div>
+					<div class="login221"><a href="http://www.2lewan.com/members/user_modifypwd"
+											 class="passwordBtn"><em></em><span>修改密码</span></a></div>
+					<div class="login221"><a href="http://www.2lewan.com/pay" class="czzxBtn"><em></em><span>充值中心</span></a>
+					</div>
+					<div class="cl"></div>
+				</div>
+				<div class="login23 linkD">
+					<div class="pat1"><strong>您最近登录的服务器：</strong></div>
+					<div id="login_game_info">暂无</div>
+				</div>
+			</div>&lt;!&ndash; 动态导航 &ndash;&gt;
+			<div id="banner_2">
+				<div class="effect">
+					<script type="text/javascript" src="index/jquery.pack.js"></script>
+					<script type="text/javascript" src="index/jQuery.blockUI.js"></script>
+					<script type="text/javascript" src="index/jquery.SuperSlide.js"></script>
+					<script language="javascript">
+						var str = "";
+						str += "<div id='slideBox' class='slideBox'>";
+						str += "<div class='hd'><ul>";
+						str += "<li>斗破沙城</li>";
+						str += "<li>天书世界</li>";
+						str += "<li>百战沙城</li>";
+						str += "<li>锦衣夜行</li>";
+						str += "<li>九阴绝学</li>";
+						str += "</ul></div><div class='bd'><ul>"
+						str += "<li><a href='http://dpsc.2lewan.com/' target='_blank'><img src='http://www.2lewan.com/Public/ad_gug/20170801/201708017553.png' /></a></li>";
+						str += "<li><a href='http://tssj.2lewan.com' target='_blank'><img src='http://www.2lewan.com/Public/ad_gug/20170801/20170801959712.png' /></a></li>";
+						str += "<li><a href='http://bzsc.2lewan.com/' target='_blank'><img src='http://www.2lewan.com/Public/ad_gug/20170801/20170801276562.png' /></a></li>";
+						str += "<li><a href='http://jyyx.2lewan.com/' target='_blank'><img src='http://www.2lewan.com/Public/ad_gug/20170801/20170801910930.png' /></a></li>";
+						str += "<li><a href='http://jyjx.2lewan.com/' target='_blank'><img src='http://www.2lewan.com/Public/ad_gug/20170801/20170801403549.png' /></a></li>";
+						str += "</ul></div></div>"
+						document.write(str);
+						jQuery(".slideBox").slide({mainCell: ".bd ul", effect: "left", autoPlay: true});
+					</script>
+					<div id="slideBox" class="slideBox">
+						<div class="hd">
+							<ul>
+								<li class=" ">斗破沙城</li>
+								<li class="on">天书世界</li>
+								<li class=" ">百战沙城</li>
+								<li class=" ">锦衣夜行</li>
+								<li class=" ">九阴绝学</li>
+							</ul>
+						</div>
+						<div class="bd">
+							<div class="tempWrap" style="overflow:hidden; position:relative; width:376px">
+								<ul style="width: 1880px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -376px;">
+									<li style="float: left; width: 376px;"><a href="http://dpsc.2lewan.com/"
+																			  target="_blank"><img
+											src="index/images/201708017553.png"></a></li>
+									<li style="float: left; width: 376px;"><a href="http://tssj.2lewan.com/"
+																			  target="_blank"><img
+											src="index/images/20170801959712.png"></a></li>
+									<li style="float: left; width: 376px;"><a href="http://bzsc.2lewan.com/"
+																			  target="_blank"><img
+											src="index/images/20170801276562.png"></a></li>
+									<li style="float: left; width: 376px;"><a href="http://jyyx.2lewan.com/"
+																			  target="_blank"><img
+											src="index/images/20170801910930.png"></a></li>
+									<li style="float: left; width: 376px;"><a href="http://jyjx.2lewan.com/"
+																			  target="_blank"><img
+											src="index/images/20170801403549.png"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>&lt;!&ndash; 信息模块 &ndash;&gt;
+			<div id="tabs0">
+				<div class="menu1">
+					<ul class="menu0" id="menu0"><span class="more"><a
+							href="http://www.2lewan.com/article/">更多</a></span>
+						<li onmousemove="setTab(0,0)" class="hover">新闻公告</li>
+						<li onmousemove="setTab(0,1)" class="">最新活动</li>
+					</ul>
+				</div>
+				<div class="main" id="main0">
+					<ul class="block" style="display: block; ">
+						<li><a href="http://www.2lewan.com/article/read/aid/11257" class="vo_ntitle"
+							   title="《斗破沙城》战区沙城36服将于2017年8月2日15:00火爆开启" target="_blank">《斗破沙城》战区沙城36服将于2017年8月2日15:00火爆开启</a>
+						</li>
+						<li><a href="http://www.2lewan.com/article/read/aid/11256" class="vo_ntitle"
+							   title="《百战沙城》双线128服将于2017年8月2日15:00火爆开启"
+							   target="_blank">《百战沙城》双线128服将于2017年8月2日15:00火爆开启</a></li>
+						<li><a href="http://www.2lewan.com/article/read/aid/11252" class="vo_ntitle"
+							   title="《斗破沙城》战区沙城35服将于2017年8月1日15:00火爆开启" target="_blank">《斗破沙城》战区沙城35服将于2017年8月1日15:00火爆开启</a>
+						</li>
+						<li><a href="http://www.2lewan.com/article/read/aid/11251" class="vo_ntitle"
+							   title="《百战沙城》双线127服将于2017年8月1日15:00火爆开启"
+							   target="_blank">《百战沙城》双线127服将于2017年8月1日15:00火爆开启</a></li>
+						<li><a href="http://www.2lewan.com/article/read/aid/11243" class="vo_ntitle"
+							   title="《斗破沙城》战区沙城32服将于2017年7月28日15:00火爆开启" target="_blank">《斗破沙城》战区沙城32服将于2017年7月28日15:00火爆开启</a>
+						</li>
+						<li><a href="http://www.2lewan.com/article/read/aid/11242" class="vo_ntitle"
+							   title="《百战沙城》双线124服将于2017年7月28日15:00火爆开启" target="_blank">《百战沙城》双线124服将于2017年7月28日15:00火爆开启</a>
+						</li>
+					</ul>
+					<ul style="display: none; ">
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/8687"
+							   title="《爱乐玩》月末充值返利活动" target="_blank">《爱乐玩》月末充值返利活动</a></li>
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/1252"
+							   title="《爱乐玩》平台服务器冠名权活动" target="_blank">《爱乐玩》平台服务器冠名权活动</a></li>
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/10811" title="《爱乐玩》返利领取规范"
+							   target="_blank">《爱乐玩》返利领取规范</a></li>
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/10546" title="《蛮荒之怒》返利活动"
+							   target="_blank">《蛮荒之怒》返利活动</a></li>
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/10181"
+							   title="《斗破沙城》最新返利活动" target="_blank">《斗破沙城》最新返利活动</a></li>
+						<li><a class="vo_ntitle" href="http://www.2lewan.com/article/read/aid/9841" title="《爱乐玩》新年大回馈"
+							   target="_blank">《爱乐玩》新年大回馈</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>-->
+		<div class="content_1_1">
+			<div class="swiper-container" style="margin-bottom: 30px;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="./index/images/965x470.png" style="width: 965px; height: 470px;" /></div>
+					<div class="swiper-slide"><img src="./index/images/965x470_1.png" style="width: 965px; height: 470px;" /></div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- 如果需要滚动条 -->
+				<!--<div class="swiper-scrollbar"></div>-->
+			</div>
+		</div>
+		<link rel="stylesheet" href="plugs/swiper-3.4.2.min.css" type="text/css">
+		<script type="text/javascript" src="plugs/swiper-3.4.2.jquery.min.js"></script>
+		<style>
+			.swiper-container {
+				width: 965px;
+			}
+		</style>
+		<script>
+			var mySwiper = new Swiper ('.swiper-container', {
+				loop: true,
+				autoplay: 3000,
+
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+
+				// 如果需要前进后退按钮
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+
+				// 如果需要滚动条
+//				scrollbar: '.swiper-scrollbar',
+			})
+		</script>
+		<div class="aboutUs">
+			<h3 style="font-size: 24px; font-weight: 600; text-align: center; line-height: 40px;
+    margin-bottom: 40px;">公司简介</h3>
+			<div class="con" style="font-size: 16px; text-indent: 2em; line-height: 30px;">
+				“成为有趣、快乐的创造者和传播者。”这是趣虹的使命。我们所做的一切都围绕这一使命：致力于为玩家创造有趣、快乐的内容的同时，不断的产生利润。
+				正因为此，在2013年，趣虹在深圳注册成立了公司。并随智能机的兴起，在Store上，发布了自己的第一款游戏，并曾取得优秀的成绩。
+			</div>
+			<div class="con" style="font-size: 16px; text-indent: 2em; line-height: 30px;">
+				趣虹将研发和发行融合一体，创造出符合中国市场和海外市场可传播的创意内容。
+			</div>
+			<div class="con" style="font-size: 16px; text-indent: 2em; line-height: 30px;">
+				趣虹在手机内容和传播领域，成为国内的专业精英。
+			</div>
+		</div>
+		<div id="content_4" style="margin-top: 30px">
+			<!--<div id="friendsLink" class="mt10" style="display:block">
+				<div class="modelTitle1">
+					<div class="modelTitle1Lt"></div>
+					<div class="modelTitle1Rt"></div>
+					<h2><b></b><span>友情链接</span></h2></div>
+				<div class="friendsLinkCont">
+					<a href="http://cycq.2lewan.com/" target="_blank">刺影传奇|</a><a
+						href="http://jyjx.2lewan.com/" target="_blank">九阴绝学|</a><a href="http://tssj.2lewan.com/"
+																				   target="_blank">天书世界|</a><a
+						href="http://yscq.2lewan.com/" target="_blank">原始传奇|</a><a href="http://ltzn.2lewan.com/"
+																				   target="_blank">雷霆之怒|</a><a
+						href="http://bzzr.2lewan.com/" target="_blank">霸者之刃|</a><a href="http://mhj.2lewan.com/"
+																				   target="_blank">莽荒纪|</a><a
+						href="http://aszs.2lewan.com/" target="_blank">傲世战神|</a><a href="http://smsg.2lewan.com/"
+																				   target="_blank">神魔三国|</a><a
+						href="http://hqg.2lewan.com/" target="_blank">花千骨|</a><a href="http://fsgj.2lewan.com/"
+																				 target="_blank">风色轨迹|</a><a
+						href="http://hltx.2lewan.com/" target="_blank">号令天下|</a><a href="http://dzs.2lewan.com/"
+																				   target="_blank">大战神|</a><a
+						href="http://qs.2lewan.com/" target="_blank">七杀|</a><a href="http://qfz.2lewan.com/"
+																			   target="_blank">乔峰传|</a><a
+						href="http://hazg.2lewan.com/" target="_blank">黑暗之光|</a><a href="http://jxtcj.2lewan.com/"
+																				   target="_blank">九阴天辰诀|</a><a
+						href="http://wssb.2lewan.com/" target="_blank">无上神兵|</a><a href="http://mlj.2lewan.com/"
+																				   target="_blank">魔龙诀|</a><a
+						href="http://sg2.2lewan.com/" target="_blank">盛世三国2|</a><a href="http://nz.2lewan.com/"
+																				   target="_blank">怒战|</a><a
+						href="http://dhd.2lewan.com/" target="_blank">大皇帝|</a><a href="http://zlcq.2lewan.com/"
+																				 target="_blank">斩龙传奇|</a><a
+						href="http://ktzs.2lewan.com/" target="_blank">开天战神|</a>
+				</div>
+				<div class="modelFt1"><b class="modelFt1Lt"></b><b class="modelFt1Rt"></b></div>
+			</div>-->
+			<script>
+				function setTab(m, n) {
+					var tli = document.getElementById("menu" + m).getElementsByTagName("li");
+					var mli = document.getElementById("main" + m).getElementsByTagName("ul");
+					for (i = 0; i < tli.length; i++) {
+						tli[i].className = i == n ? "hover" : "";
+						mli[i].style.display = i == n ? "block" : "none";
+					}
+				}
+			</script><!--<script src="/Public/wancms3/js/jquery-1.4.2.js" type="text/javascript"></script>-->
+			<script src="index/jquery.cookie.js" type="text/javascript"></script>
+			<link rel="stylesheet" href="index/default.css">
+			<script src="index/jquery.artDialog.js" type="text/javascript"></script>
+			<script src="index/iframeTools.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+
+					//登录
+					var $name = $.cookie('name');
+					$.ajax({
+						type: 'post',
+						data: '',
+						url: "/hall/history",
+						error: function () {
+							$('#login_game_info').html("暂无");
+						},
+						cache: false,
+						dataType: 'json',
+						success: function (data) {
+							var $tempHtml = '';
+							if (data.state == 1) {
+								for (var $i = 0; $i < data.num; $i++) {
+									$tempHtml += "<a href='/game/login?game=" + data[$i]['gid'] + "&server=" + data[$i]['sid'] + "' target='_blank'><span>" + data[$i]['gamename'] + "</span><em>" + data[$i]['servername'] + "</em></a>";
+								}
+							} else {
+								$tempHtml += "暂无";
+							}
+
+							if (data.username != "") {
+
+								$('#login').css('display', 'none');
+								$('#loginafter').css('display', 'block');
+
+							}
+							$('#login_game_info').html($tempHtml);
+							$('#username').html("<font>尊敬的：</font>" + data.username);
+							$('#money').html("<font>" + data.money + "</font>平台币");
+
+						}
+					});
+
+
+					$("#log_b").click(function () {
+
+						var $username = $('#user_name').val();
+						var $password = $('#user_pwd').val();
+						if ($("#saveuser").is(":checked") == true) {
+							var $saveuser = '1';
+						}
+						else {
+							var $saveuser = '0';
+						}
+						if ($username == "" || $password == "" || $username.length < 5 || $username.length > 22 || $password.length < 5) {
+							$.dialog.alert('登陆失败，提交数据不合法，请检查您的输入。');
+							return false;
+						}
+
+						$.ajax({
+							type: 'post',
+							data: 'user_name=' + $username + '&user_pwd=' + $password + '&saveuser=' + $saveuser,
+							url: "/accounts/checklogin",
+							error: function () {
+								$.dialog.alert('登陆发生错误,请稍候重试.');
+							},
+							beforeSend: function (XMLHttpRequest) {
+								XMLHttpRequest.setRequestHeader("X_Requested_With", "XMLHttpRequest");
+							},
+							cache: false,
+							dataType: 'json',
+							success: function (data) {
+
+								if (data.state != "1") {
+
+									$.dialog({
+										title: '提示信息',
+										content: data.msg,
+										ok: true,
+										okVal: '确定',
+										lock: true,
+										icon: 'face-sad'
+									})
+								}
+								else {
+									$('#login').css('display', 'none');
+									$('#loginafter').css('display', 'block');
+									$('body').append(data.script)
+									//$.dialog.tips(data.msg);
+									setTimeout("location.reload(true)", 2000);
+								}
+							}
+						});
+						$('#login_box').ajaxStart(function () {
+							$.dialog({
+								id: 'dialog1',
+								title: '提示信息',
+								content: "<div style='text-align:center;'><img style='width:14px; height:14px;' src='/Public/wancms3/images/loading.gif' alt='loading'><span>&nbsp;请稍候,操作正在进行中.</span></div>",
+								lock: true,
+								time: 1.1
+							})
+						})
+
+					})
+
+					//回车调用登录
+					document.onkeydown = function (e) {
+						if (!e) e = window.event;//火狐中是 window.event
+						if ((e.keyCode || e.which) == 13) {
+							var $username = $('#user_name').val();
+							var $password = $('#user_pwd').val();
+							if ($username == "" || $password == "" || $username.length < 5 || $username.length > 22 || $password.length < 5) {
+								$.dialog.alert('登陆失败，提交数据不合法，请检查您的输入。');
+								return false;
+							}
+
+							$.ajax({
+								type: 'post',
+								data: 'user_name=' + $username + '&user_pwd=' + $password,
+								url: "/accounts/checklogin",
+								error: function () {
+									$.dialog.alert('登陆发生错误,请稍候重试.');
+								},
+								cache: false,
+								dataType: 'json',
+								success: function (data) {
+
+									if (data.state != "1") {
+
+										$.dialog({
+											title: '提示信息',
+											content: data.msg,
+											ok: true,
+											okVal: '确定',
+											lock: true,
+											icon: 'face-sad'
+										})
+									}
+									else {
+										$('#login').css('display', 'none');
+										$('#loginafter').css('display', 'block');
+										$('body').append(data.script)
+										//$.dialog.tips(data.msg);
+										setTimeout("location.reload(true)", 2000);
+									}
+								}
+							});
+							$('#login_box').ajaxStart(function () {
+								$.dialog({
+									id: 'dialog1',
+									title: '提示信息',
+									content: "<div style='text-align:center;'><img style='width:14px; height:14px;' src='/Public/images/loading.gif' alt='loading'><span>&nbsp;请稍候,操作正在进行中.</span></div>",
+									lock: true,
+									time: 1.1
+								})
+							})
+						}
+					}
+
+				});
+			</script>
+			<div id="footer" style="text-align:center;">
+				<div style="float:right; width:180px;height:120px; padding-top:10px; text-align:right; padding-right:10px; ">
+					<a key="55068d01c274e77b9ec44a9f" logo_size="83x30" logo_type="realname"
+					   href="javascript:"
+					   target="_blank">
+						<script src="index/aq_auth.js"></script>
+						<b id="aqLogoCILJY" style="display: none;"></b><img src="index/sm_83x30.png" alt="安全联盟认证"
+																			width="83" height="30"
+																			style="border: none;"></a>
+					<script id="ebsgovicon" src="index/govicon.js" type="text/javascript" charset="utf-8"></script>
+					<a href="javascript:"><img
+							src="index/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="36"
+							height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a>
+					<script type="text/javascript" src="index/iplookup.php"></script>
+				</div>
+				<div style="width:720px; height:130px; "><p><span><a href="javascript:">人才招聘</a><font>|</font><a
+						href="javascript:">法律声明</a><font>|</font><a
+						href="javascript:">商务合作</a><font>|</font><a
+						href="javascript:">关于我们</a><font>|</font><a
+						href="javascript:">免责声明</a><font>|</font><a
+						href="javascript:">客服中心</a><font>|</font></span></p>
+					<p>Copyright ©2017 深圳市趣虹科技有限公司 版权所有</p>
+					<p>粤ICP备14072621号 《网络文化经营许可证》粤网文[2014]2051-401号</p>
+					<p style="color:#999999">健康游戏忠告： 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+					<p></p></div>
+			</div>
+		</div>
+	</div><!--<style type="text/css">
+#gg_l {
+left: 50%;
+margin-left: -799px;
+}
+.ggbanner_r {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:left;
+}
+.ggbanner_l {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:right;
+}
+#gg_r {
+left: 50%;
+margin-left: 496px;
+}
+
+</style><div id="gg_r" class="ggbanner_r"><a target="_blank" href="http://dpsc.2lewan.com"><img border="0"  src="Public/ad_gug/20170522/20170522577472.png"></a></div><div id="gg_l" class="ggbanner_l"><a target="_blank" href="http://bzsc.2lewan.com"><img  border="0" src="Public/ad_gug/20170410/20170410544792.png"></a></div>-->
+</div>
+<div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255);"></div>
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;">
+	<div id="trans-tooltip">
+		<div id="tip-left-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png&quot;);"></div>
+		<div id="tip-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png&quot;) repeat-x;"></div>
+		<div id="tip-right-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png&quot;);"></div>
+		<div id="tip-right"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png&quot;) repeat-y;"></div>
+		<div id="tip-right-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png&quot;);"></div>
+		<div id="tip-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div>
+		<div id="tip-left-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png&quot;);"></div>
+		<div id="tip-left"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png&quot;);"></div>
+		<div id="trans-content"></div>
+	</div>
+	<div id="tip-arrow-bottom"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png&quot;);"></div>
+	<div id="tip-arrow-top"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png&quot;);"></div>
+</div>
+</body>
+</html>

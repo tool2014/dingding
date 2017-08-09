@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0029)http://www.2lewan.com/article -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>资讯中心-爱乐玩网页游戏平台</title>
+	<meta name="keywords" content="资讯">
+	<meta name="description" content="E5E2资讯中心">
+	<link rel="shortcut icon" href="http://www.2lewan.com/Public/wancms3/images/favicon.ico">
+	<link href="资讯中心/css.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="资讯中心/stats" charset="UTF-8"></script>
+</head>
+<body>
+<div style="display: none; position: absolute; " class="">
+	<div class="aui_outer">
+		<table class="aui_border">
+			<tbody>
+			<tr>
+				<td class="aui_nw"></td>
+				<td class="aui_n"></td>
+				<td class="aui_ne"></td>
+			</tr>
+			<tr>
+				<td class="aui_w"></td>
+				<td class="aui_c">
+					<div class="aui_inner">
+						<table class="aui_dialog">
+							<tbody>
+							<tr>
+								<td colspan="2" class="aui_header">
+									<div class="aui_titleBar">
+										<div class="aui_title" style="cursor: move; "></div>
+										<a class="aui_close" href="javascript:/*artDialog*/;" style="">×</a></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="aui_icon" style="display: none; ">
+									<div class="aui_iconBg"
+										 style="background-image: none; background-position: initial initial; background-repeat: initial initial; "></div>
+								</td>
+								<td class="aui_main" style="width: auto; height: auto; ">
+									<div class="aui_content" style="padding: 20px 25px; "></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="aui_footer">
+									<div class="aui_buttons" style="display: none; "></div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+				<td class="aui_e"></td>
+			</tr>
+			<tr>
+				<td class="aui_sw"></td>
+				<td class="aui_s"></td>
+				<td class="aui_se" style="cursor: se-resize; "></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="top">
+	<div id="topBox">
+		<div class="top ">
+			<script type="text/javascript">/*function addCookie()
+{
+    if (document.all)
+    {
+       window.external.addFavorite('http://www.2lewan.com','网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,百战沙城,斗破沙城，天书世界');
+    }
+    else if (window.sidebar)
+    {
+       window.sidebar.addPanel('网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,百战沙城,斗破沙城，天书世界', 'http://www.2lewan.com', "");
+    }
+
+}
+
+
+
+function setHomepage()
+{
+
+    if (document.all)
+    {
+        document.body.style.behavior='url(#default#homepage)';
+
+        document.body.setHomePage('http://www.2lewan.com');
+    }
+    else if (window.sidebar)
+    {
+        if(window.netscape)
+        {
+            try
+            {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }
+            catch (e)
+            {
+                alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" );
+            }
+        }
+
+        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+
+        prefs.setCharPref('browser.startup.homepage','http://www.2lewan.com');
+
+    }
+
+}*/
+			//添加收藏夹
+			function addBookmark(url, title) {
+				var URL = url || window.location.href;
+				var title = title || document.title;
+
+				try {
+					window.external.AddFavorite(url, title);          //ie
+				} catch (e) {
+					try {
+						window.sidebar.addPanel(title, URL, "");       //firefox
+					} catch (e) {
+						alert("加入收藏失败，请使用Ctrl+D进行添加");   //chrome opera safari
+						return false;
+					}
+				}
+			}
+
+
+			//设为首页
+			function setHomepage(url, title) {
+				if (document.all) {
+					document.body.style.behavior = 'url(#default#homepage)';
+					document.body.setHomePage(url);
+				}
+				else if (window.sidebar) {
+					if (window.netscape) {
+						try {
+							netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+						}
+						catch (e) {
+							alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+						}
+					}
+					var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+					prefs.setCharPref(title, url);
+				}
+			}
+			</script>
+			<div class="top-l left" style="">
+				<ul><!--<li class="syBtn"><a href="javascript:setHomepage();" style="color:#646464;" >设为首页</a></li>-->
+					<li class="syBtn"><a href="javascript:;" onclick="if(document.all)
+		  {document.body.style.behavior = &#39;url(#default#homepage)&#39;;
+		   document.body.setHomePage(&#39;http://{$config.domain}&#39;,&#39;网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,百战沙城,斗破沙城，天书世界&#39;);
+		  }else{
+		    alert(&#39;浏览器不支持此操作, 请手动设为首页&#39;);
+		  }" style="color:#646464;">设为首页</a></li>
+					<li class="pl"></li>
+					<!--<li class="scBtn"><a href="javascript:addCookie();" style="color:#646464;" hidefocus="”true”">加入收藏</a></li>-->
+					<li class="scBtn"><a
+							href="javascript:addBookmark(&#39;http://www.2lewan.com&#39;,&#39;网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,百战沙城,斗破沙城，天书世界&#39;);"
+							style="color:#646464;" hidefocus="”true”">加入收藏</a></li>
+				</ul>
+			</div>
+			<div class="top-r right"><a href="http://www.2lewan.com/members/user_fcm" hidefocus="”true”">防沉迷系统</a><span
+					class="pl"></span><a href="http://www.2lewan.com/article/jiazhangjianhu" target="_blank"
+										 hidefocus="”true”">适龄提示:<span style="color:#ff6600;">18+</span> 家长监护系统</a>
+				<div class="site_nav"><a href="http://www.2lewan.com/" hidefocus="”true”"><img src="资讯中心/allgameBtn.png"
+																							   alt="网页游戏"></a>
+					<!--游戏下拉列表--></div>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<style>
+
+			#banner dl {
+
+				overflow: hidden;
+
+				zoom: 1;
+
+				width: 999px;
+
+				margin: 0 auto
+
+			}
+
+			#banner {
+
+				height: 88px;
+
+				margin: 0 auto;
+
+				background: #fff
+
+			}
+
+			#banner dt {
+
+				width: 283px;
+
+				height: 88px;
+
+				float: left
+
+			}
+
+			#banner dd {
+
+				width: 716px;
+
+				height: 88px;
+
+				float: right
+
+			}
+
+			#banner img {
+				max-width: none;
+			}
+		</style>
+		<dl>
+			<dt style="text-align:left;"><a href="javascript:"><img src="images/logo.png" style="margin-top: 10px; width: 220px"></a></dt>
+			<dt style="text-align:left;"><a href="javascript:" target="_blank"><img
+					src="index/images/970-100.png" width="700" height="90"></a></dt>
+		</dl>
+	</div>
+	<div id="navbox" style="background-color: #ee8601">
+		<div id="nav">
+			<ul id="guo">
+				<li class="nor"><a href="./index.html"><strong><span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span></strong></a></li>
+				<li class="nor"><a href="./关于我们.html"><strong><span>用户中心</span></strong></a></li>
+				<li class="on"><a href="./资讯中心.html"><strong><span>资讯中心</span></strong></a></li>
+				<li class="nor"><a href="./充值.html"><strong><span>充值中心</span></strong></a></li>
+				<li class="nor"><a href="./客服中心.html"><strong><span>客服中心</span></strong></a></li>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<link href="资讯中心/xw.css" rel="stylesheet" type="text/css">
+<link href="资讯中心/default_blue.css" rel="stylesheet" type="text/css">
+<style>
+	#right_1 strong {
+		float: left;
+		height: 20px;
+		display: inline;
+		overflow: hidden;
+		margin-top: 7px;
+		font: bold 14px/20px "΢���ź�", "����";
+	}
+
+</style>
+<div id="wrap">
+	<div id="container">
+		<div id="content_3">
+			<div id="content_3_left">
+				<div id="Top">
+					<dl>
+						<dt><strong>网页游戏排行榜</strong><span class="more"><a
+								href="javascript:">更多</a></span></dt>
+						<dd><span><a href="javascript:">百战沙城</a></span></dd>
+						<dd><span><a href="javascript:">斗破沙城</a></span></dd>
+						<dd><span><a href="javascript:">锦衣夜行</a></span></dd>
+						<dd><span><a href="javascript:">沙城战歌</a></span></dd>
+						<dd><span><a href="javascript:">众神屠龙</a></span></dd>
+						<dd><span><a href="javascript:">天书世界</a></span></dd>
+						<dd><span><a href="javascript:">热血战歌</a></span></dd>
+						<dd><span><a href="javascript:">天问</a></span></dd>
+						<dd><span><a href="javascript:">九阴绝学</a></span></dd>
+						<dd><span><a href="javascript:">蛮荒之怒</a></span></dd>
+						<dd><span><a href="javascript:">魔龙诀</a></span></dd>
+						<dd><span><a href="javascript:">盗墓笔记</a></span></dd>
+						<dd><span><a href="javascript:">原始传奇</a></span></dd>
+					</dl>
+				</div>
+			</div>
+			<div id="content_3_right">
+				<div id="right_1"><strong><a href="./index.html">首页</a>&gt;<a
+						href="javascript:">资讯中心</a></strong></div>
+				<div id="right_2">
+					<ul class="new_list_ul">
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城38服将于2017年8月4日15:00火爆开启</a><span>[17-08-03]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线130服将于2017年8月4日15:00火爆开启</a><span>[17-08-03]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城37服将于2017年8月3日15:00火爆开启</a><span>[17-08-02]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线129服将于2017年8月3日15:00火爆开启</a><span>[17-08-02]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城36服将于2017年8月2日15:00火爆开启</a><span>[17-08-01]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线128服将于2017年8月2日15:00火爆开启</a><span>[17-08-01]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城35服将于2017年8月1日15:00火爆开启</a><span>[17-08-01]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线127服将于2017年8月1日15:00火爆开启</a><span>[17-08-01]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城32服将于2017年7月28日15:00火爆开启</a><span>[17-07-27]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线124服将于2017年7月28日15:00火爆开启</a><span>[17-07-27]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《锦衣夜行》新版5服将于2017年7月28日15:00火爆开启</a><span>[17-07-27]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城31服将于2017年7月27日15:00火爆开启</a><span>[17-07-26]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线123服将于2017年7月27日15:00火爆开启</a><span>[17-07-26]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《锦衣夜行》新版4服将于2017年7月27日15:00火爆开启</a><span>[17-07-26]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城30服将于2017年7月26日15:00火爆开启</a><span>[17-07-25]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线122服将于2017年7月26日15:00火爆开启</a><span>[17-07-25]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《锦衣夜行》新版3服将于2017年7月26日15:00火爆开启</a><span>[17-07-25]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《斗破沙城》战区沙城29服将于2017年7月25日15:00火爆开启</a><span>[17-07-24]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《百战沙城》双线121服将于2017年7月25日15:00火爆开启</a><span>[17-07-24]</span>
+						</li>
+						<li><a href="javascript:">[新闻]</a>　<a
+								href="javascript:">《锦衣夜行》新版2服将于2017年7月25日15:00火爆开启</a><span>[17-07-24]</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+		<div id="content_4">
+			<div id="footer" style="text-align:center;">
+				<div style="float:right; width:180px;height:120px; padding-top:10px; text-align:right; padding-right:10px; ">
+					<a key="55068d01c274e77b9ec44a9f" logo_size="83x30" logo_type="realname"
+					   href="javascript:"
+					   target="_blank">
+						<script src="index/aq_auth.js"></script>
+						<b id="aqLogoCILJY" style="display: none;"></b><img src="index/sm_83x30.png" alt="安全联盟认证"
+																			width="83" height="30"
+																			style="border: none;"></a>
+					<script id="ebsgovicon" src="index/govicon.js" type="text/javascript" charset="utf-8"></script>
+					<a href="javascript:"><img
+							src="index/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="36"
+							height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a>
+					<script type="text/javascript" src="index/iplookup.php"></script>
+				</div>
+				<div style="width:720px; height:130px; "><p><span><a href="javascript:">人才招聘</a><font>|</font><a
+						href="javascript:">法律声明</a><font>|</font><a
+						href="javascript:">商务合作</a><font>|</font><a
+						href="javascript:">关于我们</a><font>|</font><a
+						href="javascript:">免责声明</a><font>|</font><a
+						href="javascript:">客服中心</a><font>|</font></span></p>
+					<p>Copyright ©2017 深圳市趣虹科技有限公司 版权所有</p>
+					<p>粤ICP备14072621号 《网络文化经营许可证》粤网文[2014]2051-401号</p>
+					<p style="color:#999999">健康游戏忠告： 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+					<p></p></div>
+				<style>
+					#footer p {
+						margin: 12px auto;
+					}
+				</style>
+			</div>
+		</div>
+	</div><!--<style type="text/css">
+#gg_l {
+left: 50%;
+margin-left: -799px;
+}
+.ggbanner_r {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:left;
+}
+.ggbanner_l {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:right;
+}
+#gg_r {
+left: 50%;
+margin-left: 496px;
+}
+
+</style><div id="gg_r" class="ggbanner_r"><a target="_blank" href=""><img border="0"  src=""></a></div><div id="gg_l" class="ggbanner_l"><a target="_blank" href=""><img  border="0" src=""></a></div>-->
+</div>
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;">
+	<div id="trans-tooltip">
+		<div id="tip-left-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png&quot;);"></div>
+		<div id="tip-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png&quot;) repeat-x;"></div>
+		<div id="tip-right-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png&quot;);"></div>
+		<div id="tip-right"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png&quot;) repeat-y;"></div>
+		<div id="tip-right-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png&quot;);"></div>
+		<div id="tip-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div>
+		<div id="tip-left-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png&quot;);"></div>
+		<div id="tip-left"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png&quot;);"></div>
+		<div id="trans-content"></div>
+	</div>
+	<div id="tip-arrow-bottom"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png&quot;);"></div>
+	<div id="tip-arrow-top"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png&quot;);"></div>
+</div>
+</body>
+</html>

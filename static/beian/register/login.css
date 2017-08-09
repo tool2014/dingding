@@ -1,0 +1,61 @@
+.reg_main .left_main{width:650px;padding-right:20px;float:left}
+.reg_main .right_side{height:163px;width:201px;padding-left:20px;padding-bottom:999px;margin-bottom:-999px;border-left:1px #ddd solid;float:left}
+.reg_main{padding-top:30px;margin-bottom:30px;color:#565656}
+.reg_main a{text-decoration:underline}
+.reg_main .title_box{height:60px;padding-bottom:20px}
+.reg_main .title_box .title{font-size:20px;padding-bottom:6px;font-weight:normal}
+.reg_main .title_box .subtitle{color:#888}
+.reg_main .form_list{padding-bottom:20px}
+.reg_main .input_txt{height:24px;line-height:24px}
+.reg_main .input_tip,.reg_main .tr_tn,.reg_main .tip_text{height:36px;line-height:36px}
+.reg_main .addicted_tip{background:url(../images/x_dotted.png) left top repeat-x;padding:20px 0 20px 30px;color:#888}
+.reg_main .icon16{margin:10px 5px 10px 0}
+.reg_main .reg_button{font-size:16px;height:46px;line-height:46px;padding:0 20px;border:0;color:white;border-radius:2px;text-decoration:none;}
+.reg_main .agreebbrule{height:32px;line-height:32px;}
+.reg_main .agreebbrule a{color:#565656;text-decoration:none}
+.reg_main .agreebbrule a:hover{text-decoration:underline}
+.reg_main .right_side{line-height:180%}
+.reg_main .right_side p a{padding:0 5px;color:#237db2}
+.reg_main .with_other_login{padding-top:10px;width:200px;}
+.reg_main .with_other_login li{height:26px;line-height:26px;padding-right:30px;float:left;position:relative}
+.reg_main .with_other_login .icon16{margin:5px 5px 5px 0;float:left}
+.reg_main .with_other_login .line{height:12px;background:url(../images/y_dotted.png) -1px 0px repeat-y;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);opacity:0.3;position:absolute;right:13px;top:8px}
+.reg_main .with_other_login a{color:#565656;text-decoration:none}
+.reg_main .reg,.reg_main .weibo .line{display:none}
+.log_in{height:257px;text-align:center;color:#565656}
+.log_in .log_in_icon{height:32px;padding-top:50px;margin-bottom:20px;display:block;background:url(../images/loading.gif) center bottom no-repeat}
+.login_main{height:490px;background-repeat:repeat-x;background-position:center top}
+.login_main .login_box_main{height:490px;position:relative;z-index:1}
+.login_main .login_banner{width:600px;height:380px;position:absolute;left:0px;top:50px;z-index:2;background:url(../images/login_welcome_bg.jpg) center top no-repeat;}
+.login_main .login_box{width:288px;height:470px;line-height:470px;position:absolute;right:30px;top:0px;z-index:3}
+.login_main .form_box{width:288px;line-height:normal;background:white;background:#fff;border: 1px solid #ddd;display:inline-block;vertical-align:middle}
+.login_main .title_box{margin:10px 20px 0 20px;height:30px;line-height:30px;font-size:14px;margin-bottom:16px;color:#565656;border-bottom:2px #c9c9c9 solid}
+.login_main .login_form{padding:0 20px}
+.login_main .login_form .icon16{background-image:url(../images/login.png)}
+.login_main .login_form .user_16_gray{background-position:0px 0px}
+.login_main .login_form .key_16_gray{background-position:-32px 0px}
+.login_main .login_form .imgcode_16_gray{background-position:-64px 0px}
+.login_main .form_list{width:100%;padding-bottom:16px;position:relative;z-index:10}
+.login_main .input_box{position:relative;z-index:11;float:left}
+.login_main .input_tip{height:40px;line-height:40px}
+.login_main .input_w1{width:197px;margin-right:0}
+.login_main .input_w2{width:77px}
+.login_main .input_txt{padding:9px 5px 9px 44px}
+.login_main .img_code{width:108px;height:40px;margin-right:0px;float:left}
+.login_main .img_code img{width:108px;height:40px}
+.login_main .icon_box{width:35px;height:38px;display:inline-block;overflow:hidden;background:#f1f1f1;border-right:1px #cecece solid;position:absolute;top:1px;left:1px;z-index:30}
+.login_main .icon_box .icon16{margin:11px 10px}
+.login_main .auto_login{height:20px;line-height:20px;color:#565656}
+.login_main .auto_login .auto_login_l{float:left}
+.login_main .auto_login .forget{float:left;margin-left:10px;}
+.login_main .auto_login .reg{float:right;color:#237db2;white-space:nowrap;margin:0}
+.login_main .auto_login .checkbox_a{height:20px;line-height:20px;float:left}
+.login_main .auto_login .fui_checkbox{margin:2px 4px 2px 0}
+.login_main .submit_btn{font-size:14px;border:0;color:white;border-radius:2px;width:100%;_width:95%;height:40px;line-height:40px}
+.login_main .with_other_login{padding:14px 20px 19px 20px;height:20px;line-height:20px;background:url(../images/x_dotted.png) left top repeat-x}
+.login_main .with_other_login .line{height:12px;background:url(../images/y_dotted.png) -1px 0px repeat-y;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);opacity:0.3;position:absolute;right:-14px;top:5px}
+.login_main .with_other_login li{display:inline;}
+.login_main .with_other_login a.nolink{margin:0;white-space: nowrap;}
+.login_main .with_other_login a{color:#565656;margin-right:24px;_margin-right:15px;position:relative;float:left}
+.login_main .with_other_login a .icon16{margin:2px 0;margin-right:3px;float:left}
+.login_main .with_other_login a .name{float:left}

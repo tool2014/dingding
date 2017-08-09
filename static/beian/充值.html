@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0025)http://www.2lewan.com/pay -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>充值中心-爱乐玩网页游戏平台</title>
+	<meta name="keywords" content="充值">
+	<meta name="description" content="充值中心">
+	<link rel="shortcut icon" href="http://www.2lewan.com/Public/wancms3/images/favicon.ico">
+	<link href="pay/css.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="pay/stats" charset="UTF-8"></script>
+	<link href="pay/kflb.css" rel="stylesheet" type="text/css">
+	<link href="pay/style_56uu.css" rel="stylesheet" type="text/css">
+	<link href="pay/css(1).css" rel="stylesheet" type="text/css">
+	<link href="pay/login.css" rel="stylesheet" type="text/css">
+	<!-- <script type="text/javascript" rc="/app/Tpl/default/js/jquery.pack.js"></script><script type="text/javascript" src="/Public/wancms3/js/jQuery.blockUI.js"></script><script type="text/javascript" src="/Public/wancms3/js/hdm.js"></script> -->
+	<script src="pay/jquery.1.7.2.min.js" type="text/javascript"></script>
+	<script src="pay/jquery.pagination.js" type="text/javascript"></script>
+</head>
+<body>
+<div style="display: none; position: absolute; " class="">
+	<div class="aui_outer">
+		<table class="aui_border">
+			<tbody>
+			<tr>
+				<td class="aui_nw"></td>
+				<td class="aui_n"></td>
+				<td class="aui_ne"></td>
+			</tr>
+			<tr>
+				<td class="aui_w"></td>
+				<td class="aui_c">
+					<div class="aui_inner">
+						<table class="aui_dialog">
+							<tbody>
+							<tr>
+								<td colspan="2" class="aui_header">
+									<div class="aui_titleBar">
+										<div class="aui_title" style="cursor: move; "></div>
+										<a class="aui_close" href="javascript:/*artDialog*/;" style="">×</a></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="aui_icon" style="display: none; ">
+									<div class="aui_iconBg"
+										 style="background-image: none; background-position: initial initial; background-repeat: initial initial; "></div>
+								</td>
+								<td class="aui_main" style="width: auto; height: auto; ">
+									<div class="aui_content" style="padding: 20px 25px; "></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="aui_footer">
+									<div class="aui_buttons" style="display: none; "></div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</td>
+				<td class="aui_e"></td>
+			</tr>
+			<tr>
+				<td class="aui_sw"></td>
+				<td class="aui_s"></td>
+				<td class="aui_se" style="cursor: se-resize; "></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="top">
+	<div id="topBox">
+		<div class="top ">
+			<script type="text/javascript">/*function addCookie()
+{
+    if (document.all)
+    {
+       window.external.addFavorite('http://www.2lewan.com','网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,乔峰传,盛世三国2');
+    }
+    else if (window.sidebar)
+    {
+       window.sidebar.addPanel('网页游戏,webgame,最新的网页游戏,好玩的网页游戏,最新开服表,乔峰传,盛世三国2', 'http://www.2lewan.com', "");
+    }
+
+}
+
+
+
+function setHomepage()
+{
+
+    if (document.all)
+    {
+        document.body.style.behavior='url(#default#homepage)';
+
+        document.body.setHomePage('http://www.2lewan.com');
+    }
+    else if (window.sidebar)
+    {
+        if(window.netscape)
+        {
+            try
+            {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }
+            catch (e)
+            {
+                alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" );
+            }
+        }
+
+        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+
+        prefs.setCharPref('browser.startup.homepage','http://www.2lewan.com');
+
+    }
+
+}*/
+			//添加收藏夹
+			function addBookmark (url, title) {
+				var URL = url || window.location.href;
+				var title = title || document.title;
+
+				try {
+					window.external.AddFavorite(url, title);          //ie
+				} catch (e) {
+					try {
+						window.sidebar.addPanel(title, URL, "");       //firefox
+					} catch (e) {
+						alert("加入收藏失败，请使用Ctrl+D进行添加");   //chrome opera safari
+						return false;
+					}
+				}
+			}
+
+
+			//设为首页
+			function setHomepage (url, title) {
+				if (document.all) {
+					document.body.style.behavior = 'url(#default#homepage)';
+					document.body.setHomePage(url);
+				}
+				else if (window.sidebar) {
+					if (window.netscape) {
+						try {
+							netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+						}
+						catch (e) {
+							alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true");
+						}
+					}
+					var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+					prefs.setCharPref(title, url);
+				}
+			}
+			</script>
+			<div class="top-l left" style="">
+				<ul><!--<li class="syBtn"><a href="javascript:setHomepage();" style="color:#646464;" >设为首页</a></li>-->
+					<li class="syBtn"><a href="javascript:;" style="color:#646464;">设为首页</a></li>
+					<li class="pl"></li>
+					<!--<li class="scBtn"><a href="javascript:addCookie();" style="color:#646464;" hidefocus="”true”">加入收藏</a></li>-->
+					<li class="scBtn"><a
+							href="javascript:"
+							style="color:#646464;" hidefocus="”true”">加入收藏</a></li>
+				</ul>
+			</div>
+			<div class="top-r right"><a href="javascript:" hidefocus="”true”">防沉迷系统</a><span
+					class="pl"></span><a href="javascript:" target="_blank"
+										 hidefocus="”true”">适龄提示:<span style="color:#ff6600;">18+</span> 家长监护系统</a>
+				<div class="site_nav"><a href="javascript:" hidefocus="”true”"><img
+						src="pay/images/allgameBtn.png" alt="网页游戏"></a><!--游戏下拉列表--></div>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		<link rel="stylesheet" href="plugs/swiper-3.4.2.min.css" type="text/css">
+		<script type="text/javascript" src="plugs/swiper-3.4.2.jquery.min.js"></script>
+		<dl>
+			<dt style="text-align:left;"><a href="javascript:"><img src="images/logo.png" style="margin-top: 10px; width: 220px"></a></dt>
+			<dt style="text-align:left;">
+				<!--<a href="http://bzsc.2lewan.com/" target="_blank">
+					<img src="pay/images/970-100.png" width="700" height="90">
+				</a>-->
+				<style>
+					.swiper-container {
+						width: 700px;
+						height: 90px;
+					}
+				</style>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./pay/700x90.png" style="width: 700px; height: 90px;" /></div>
+						<div class="swiper-slide"><img src="./pay/700x901.png" style="width: 700px; height: 90px;"></div>
+					</div>
+				</div>
+			<script>
+				var mySwiper = new Swiper ('.swiper-container', {
+					direction: 'vertical',
+					loop: true,
+					autoplay: 3000,
+				})
+			</script>
+			</dt>
+		</dl>
+	</div>
+	<div id="navbox" style="background-color: #ee8601">
+		<div id="nav">
+			<ul id="guo">
+				<li class="nor"><a href="./index.html"><strong><span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span></strong></a></li>
+				<li class="nor"><a href="./关于我们.html"><strong><span>用户中心</span></strong></a></li>
+				<li class="nor"><a href="./资讯中心.html"><strong><span>资讯中心</span></strong></a></li>
+				<li class="on"><a href="./充值.html"><strong><span>充值中心</span></strong></a></li>
+				<li class="nor"><a href="./客服中心.html"><strong><span>客服中心</span></strong></a></li>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script language="javascript">
+	//人工汇款充值 2015.09.24 16:53
+	$(document).ready(function () {
+		jQuery.jqtab = function (tabtit, tab_conbox, shijian) {
+			$(tab_conbox).find("li").hide();
+			$(tabtit).find("li:first").addClass("li").show();
+			$(tab_conbox).find("li:first").show();
+
+			$(tabtit).find("li").bind(shijian, function () {
+				$(this).addClass("li").siblings("li").removeClass("li");
+				var activeindex = $(tabtit).find("li").index(this);
+				$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+				return false;
+			});
+
+		};
+		/*调用方法如下：*/
+		$.jqtab("#tabs2", "#tab_conbox2", "mouseenter");
+
+	});
+
+	var items_per_page = 20;
+	var page_index = 0;
+
+	function getDataList (index) {
+		var pageIndex = index;
+		var gid = $('#game_id').val();
+		$.ajax({
+			type: "POST",
+			url: "/pay/getserver",
+			data: "pageIndex=" + pageIndex + '&items_per_page=' + items_per_page + '&gid=' + gid,
+			dataType: 'json',
+			contentType: "application/x-www-form-urlencoded",
+			beforeSend: function (XMLHttpRequest) {
+				XMLHttpRequest.setRequestHeader("request_type", "XMLajax");
+			},
+			success: function (msg) {
+				var total = msg.total;
+				var html = '';
+				$.each(msg.result, function (i, n) {
+					html += "<li onclick=\"getserver('" + n['servername'] + "','" + n['sid'] + "')\" class=\"fwqxz\">" + n['servername'] + "</li>";
+				});
+				$('#server_id1').html(html);
+				//分页-只初始化一次
+				if ($("#Pagination").html().length == '') {
+					$("#Pagination").pagination(total, {
+						'items_per_page': items_per_page,
+						'num_display_entries': 10,
+						'num_edge_entries': 2,
+						'prev_text': "上一页",
+						'next_text': "下一页",
+						'callback': pageselectCallback
+					});
+				}
+			}
+		});
+	}
+
+	function pageselectCallback (page_index, jq) {
+		getDataList(page_index);
+	}
+</script>
+<style>.zhanghao {
+	border: solid 1px;
+}</style>
+<div id="wrap">
+	<div id="container">
+		<div id="content_1">
+			<script type="text/javascript">function ptczsetpay () {
+				var isLogin = false;
+				if (isLogin) {
+					$("#youid").show();
+					$("#youpintb").show();
+					$("#czwhere").hide();
+					$("#czzh1").hide();
+					$("#czzh2").hide();
+					ptbcyx_set();
+				}
+				else {
+					var aumt = $(".jeother").val() != "" ? $(".jeother").val() : $('input:radio[name="pay_amount"]:checked').val();
+					$("body").append("<div id='czinfobg'></div>")
+					$("#czinfobg").append("<div id='czinfobox'></div>")
+					$("#czinfobox").html("<div class='dlptzh'><h1><span>请先登录您的平台帐号！</span><a href='javascript:void(0);' onclick='loginClose()' id='czinfobox_close'>close</a></h1><span class='qrtjBtn'><a href=\"http://www.2lewan.com/\">立即登录</a><a href='javascript:void(0);' onclick='tjqrboxclose()'>返回</a></span></div>")
+
+				}
+			}
+
+			/*提交*/
+			function tjcon () {
+				$("#czinfobox").addClass("czerrots")
+				$("#czinfobox").html("<div class='qrcz_ts'><h1><span>请在新打开的字符页面上完成付款充值！</span><a href='javascript:void(0);' onclick='tjqrboxclose()' id='czinfobox_close'>close</a></h1><ul><li class=\"tscon1\">付款前请不要关闭或刷新此窗口。</li><li class=\"tscon2\">付款前请不要关闭或刷新此窗口。</li></ul><span class='qrtjBtn'><a href=\"http://www.jinlaiwan.com/service\"  target=\"_blank\">付款遇到问题</a><a href='javascript:void(0);' onclick='tjqrboxclose()'>返回</a></span></div>")
+			}
+
+
+			//获取订单号
+			function getOrderNo () {
+				$.ajax({
+					type: 'get',
+					dataType: 'json',
+					url: "/pay/create_order",
+					cache: false,
+					success: function (data) {
+						if (data.orderid != '') {
+							$("#trade_sn").val(data.orderid);
+						}
+						else {
+							alert('服务器繁忙，请刷新后重试！');
+						}
+					}
+				})
+			}
+
+			function tjtccon () {
+				var zhcon = $("#member_name").val()
+				var rezhcon = $("#re_member_name").val()
+				var othermoneyval = $(".jeother").val() != "" ? $(".jeother").val() : $('input:radio[name="pay_amount"]:checked').val();
+				var iswhere = $('input:radio[name="pay_platform"]:checked').val();
+				if (iswhere == 0) {
+					if ($("#gameSet a").html() == "选择游戏") {
+						open_all_game_data1();//打开选择游戏
+						//$("#msg_for_game").html("游戏不能为空!");
+						return false;
+					}
+
+					if ($("#qfSet a").html() == "选择区服") {
+						getDataList(page_index);//打开选择服务器
+						//$("#msg_for_game").html("服务器不能为空!");
+						return false;
+					}
+				} else {
+					isUserSate = true;
+				}
+				if (rezhcon == zhcon) {
+					isUserSate = true;
+				}
+				if (zhcon == "" || rezhcon == "" || rezhcon != zhcon) {
+					$("#zhts1").html("游戏账号不能为空!");
+					return false;
+				}
+				//isUser();
+				if (isUserSate) {
+					$("#zhts1").html("");
+					getOrderNo();//生成订单号
+					if (ptcyxpd == 1) {
+						if (othermoneyval < 5) {
+							$("#ylsuname").html("<font id=\"jeerro\">充值金额请限制在5元到50000元之间</font>")
+						} else {
+							var aumt = $(".jeother").val() != "" ? $(".jeother").val() : $('input:radio[name="pay_amount"]:checked').val();
+							$("body").append("<div id='czinfobg'></div>")
+
+							$("#czinfobg").append("<div id='czinfobox'></div>")
+
+							$("#czinfobox").html("<div class='qrcz'><h1><span>确认充值信息</span><a href='javascript:void(0);' onclick='tjqrboxclose()' id='czinfobox_close'>close</a></h1><ul><li class='qrcz_name'>您的充值方式：</li><li>" + $("#pay_type_name").html() + "</li></ul><ul><li class='qrcz_name'>您的订单编号：</li><li>" + $("#trade_sn").val() + "</li></ul><ul><li class='qrcz_name'>您充值的游戏：</li><li>" + $("#gameSet a").html() + "</li></ul><ul><li class='qrcz_name'>您充值的区服：</li><li>" + $("#qfSet a").html() + "</li></ul><ul><li class='qrcz_name'>您的充值帐号：</li><li>" + $("#member_name").val() + "</li></ul><ul><li class='qrcz_name'>您的金额：</li><li>" + aumt + "元</li></ul><ul><li class='qrcz_name'>充值所得：</li><li>" + $("#dyyl").html() + "</li></ul><span class='qrtjBtn'><input type='button' onclick='document.getElementById(\"form1\").submit();tjcon();'  value='确认提交'/><a href='javascript:void(0);' onclick='tjqrboxclose()' id='czinfobox_close2'>返回修改\>\></a></span></div>")
+						}
+					}
+					if (ptcyxpd == 0) {
+						if (othermoneyval < 5) {
+							$("#ylsuname").html("<font id=\"jeerro\">充值金额请限制在5元到50000元之间</font>")
+						} else {
+							var aumt = $(".jeother").val() != "" ? $(".jeother").val() : $('input:radio[name="pay_amount"]:checked').val();
+							$("body").append("<div id='czinfobg'></div>")
+							$("#czinfobg").append("<div id='czinfobox'></div>")
+							$("#czinfobox").html("<div class='qrcz'><h1><span>确认充值信息</span><a href='javascript:void(0);' onclick='tjqrboxclose()' id='czinfobox_close'>close</a></h1><ul><li class='qrcz_name'>您的充值方式：</li><li>" + $("#pay_type_name").html() + "</li></ul><ul><li class='qrcz_name'>您的订单编号：</li><li>" + $("#trade_sn").val() + "</li></ul><ul><li class='qrcz_name'>您充值的游戏：</li><li>" + $("#gameSet a").html() + "</li></ul><ul><li class='qrcz_name'>您充值的区服：</li><li>" + $("#qfSet a").html() + "</li></ul><ul><li class='qrcz_name'>您的充值帐号：</li><li>" + $("#member_name").val() + "</li></ul><ul><li class='qrcz_name'>您的金额：</li><li>" + aumt + "元</li></ul><ul><li class='qrcz_name'>充值所得：</li><li>" + $("#dyyl").html() + "</li></ul><span class='qrtjBtn'><input type='button' onclick='document.getElementById(\"form1\").submit();tjcon();'  value='确认提交'/><a href='javascript:void(0);' onclick='tjqrboxclose()' id='czinfobox_close2'>返回修改\>\></a></span></div>")
+						}
+					}
+				}
+			}
+			</script>
+			<form id="form1" name="form1" target="_blank" method="post" action="http://www.2lewan.com/pay/begin_pay">
+				<input type="text" name="game_id" id="game_id" value="0" style="display: none;"><input type="text"
+																									   name="server_id"
+																									   id="server_id"
+																									   value="0"
+																									   style="display: none;"><input
+					type="text" name="game_payto" id="game_payto" value="10" style="display:none;">
+				<div id="neiye-layout">
+					<div id="neiye_pay_left">
+						<div id="neiye_pay_left_list">
+							<div id="neiye_pay_left_list_t"></div>
+							<div id="neiye_pay_left_list_c">
+								<ul>
+									<li><a id="opt_yeepay"
+										   onclick="javascript:on_pay_type_change(this,&#39;yeepay&#39;,&#39;100&#39;,&#39;银行卡充值&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype curent"><span class="name"><em></em><i>银行卡充值</i></span></a>
+									</li>
+									<li><a id="opt_alipay"
+										   onclick="javascript:on_pay_type_change(this,&#39;alipay&#39;,&#39;100&#39;,&#39;支付宝&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>支付宝</i></span></a></li>
+									<li><a id="opt_tenpay"
+										   onclick="javascript:on_pay_type_change(this,&#39;tenpay&#39;,&#39;100&#39;,&#39;财付通&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>财付通</i></span></a></li>
+									<li><a id="opt_wxpay"
+										   onclick="javascript:on_pay_type_change(this,&#39;wxpay&#39;,&#39;98&#39;,&#39;微信支付&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>微信支付</i></span></a></li>
+									<li><a id="opt_JUNNET"
+										   onclick="javascript:on_pay_type_change(this,&#39;JUNNET&#39;,&#39;80&#39;,&#39;骏网一卡通&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>骏网一卡通</i></span></a></li>
+									<li><a id="opt_sndacard"
+										   onclick="javascript:on_pay_type_change(this,&#39;sndacard&#39;,&#39;80&#39;,&#39;盛大一卡通&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>盛大一卡通</i></span></a></li>
+									<li><a id="opt_telecom"
+										   onclick="javascript:on_pay_type_change(this,&#39;telecom&#39;,&#39;90&#39;,&#39;电信充值卡&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>电信充值卡</i></span></a></li>
+									<li><a id="opt_unicom"
+										   onclick="javascript:on_pay_type_change(this,&#39;unicom&#39;,&#39;90&#39;,&#39;联通充值卡&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>联通充值卡</i></span></a></li>
+									<li><a id="opt_qqcard"
+										   onclick="javascript:on_pay_type_change(this,&#39;qqcard&#39;,&#39;80&#39;,&#39;QQ一卡通&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>QQ一卡通</i></span></a></li>
+									<li><a id="opt_szx"
+										   onclick="javascript:on_pay_type_change(this,&#39;szx&#39;,&#39;90&#39;,&#39;神州行&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>神州行</i></span></a></li>
+									<li><a id="opt_rengong"
+										   onclick="javascript:on_pay_type_change(this,&#39;rengong&#39;,&#39;1&#39;,&#39;人工汇款充值&#39;,&#39;&#39;,&#39;&#39;);"
+										   class="paytype"><span class="name"><em></em><i>人工汇款充值</i></span></a></li>
+								</ul>
+							</div>
+							<div id="neiye_pay_left_list_f"></div>
+							<div class="clear"></div>
+						</div>
+						<div id="neiye_pay_left_infor">
+							<div id="payboxtop"></div>
+							<div id="neiye_pay_left_infor_t">
+								<div class="paytitle"><span class="title">您当前选择的是“<strong
+										id="pay_type_name">银行卡充值</strong>”的充值方式 </span><span class="help"
+																							 id="payhelp"></span></div>
+							</div>
+							<div id="neiye_pay_left_infor_c">
+								<div class="neiye_pay_left_infor_c_1" style="">
+									<div id="czwhere" class="zhxz_box" style="">
+										<ul style="display:none">
+											<li class="payts">充值到哪里：</li>
+											<li class="paytsbox"><label><input type="radio" name="pay_platform"
+																			   id="pay_platform" value="0"
+																			   checked="checked"
+																			   onclick="hide_select();">充值到游戏 </label><!--
+<label><input type="radio" name="pay_platform" id="pay_platform" value="1" class="end" onClick="hide_select('platform');" />充值到平台帐号</label>
+--></li>
+										</ul>
+									</div>
+									<div id="div_game1" class="neiye_pay_left_infor_c_1_c"
+										 style="border: 1px solid #ff8800; padding: 10px; width: 430px; line-height: 18px; display: none;">
+										<img src="pay/images/tanhao.png"> 充值到平台可以获得jinlaiwan游戏通用平台币。 <a
+											href="http://www.2lewan.com/article/read/aid/14" target="_blank"
+											style="text-decoration: underline; color: #ff8800"> 什么是平台币？</a>&nbsp;&nbsp;
+										<a href="http://www.2lewan.com/article/read/aid/14" target="_blank"
+										   style="text-decoration: underline; color: #ff8800"> 如何使用平台币？</a>&nbsp;&nbsp;
+										<a href="http://www.2lewan.com/article/read/aid/14" target="_blank"
+										   style="text-decoration: underline; color: #ff8800">使用平台币有什么好处？</a></div>
+									<div class="neiye_pay_left_infor_c_1_c" id="div_game" style="display:;">
+										<ul>
+											<li id="tip"
+												style="color: #00F; width: 100%; text-align: center; font-weight: 900; display: none;">
+												进行《神曲》充值的角色等级必须
+
+												6 级或以上，请确认后操作
+											</li>
+											<li><span class="name">请选择游戏：</span><span class="select_game"><div
+													id="gameSet"><a href="javascript:void();">选择游戏</a><b
+													></b><span id="msg_for_game"></span></div></span>
+												<div id="cz_select_game" style="display: none;">
+													<div class="cz_sg_nav">
+														<ul class="win_game_nav"><!---->
+															<li class="no_2 on" id="no_2"><a href="javascript:void();"
+																							 class="t2">网页游戏</a></li>
+															<!--li class="no_3"><a href="javascript:;" class="t2">客户端</a></li-->
+														</ul>
+														<span onclick="close_all_game_data1()"><img
+																src="pay/images/closed.gif"></span>
+														<div class="clear"></div>
+													</div><!--全部的游戏-->
+													<div id="nlist2" style="opacity: 1;">
+														<ul class="all_game_data" id="all_game_data"><!---->
+															<li id="jt"
+																onclick="focusserver(&#39;魔龙诀&#39;,&#39;27&#39;,&#39;100&#39;)">
+																魔龙诀
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;天神战&#39;,&#39;55&#39;,&#39;100&#39;)">
+																天神战
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;盗墓笔记&#39;,&#39;61&#39;,&#39;10&#39;)">
+																盗墓笔记
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;斗破沙城&#39;,&#39;56&#39;,&#39;100&#39;)">
+																斗破沙城
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;龙城&#39;,&#39;57&#39;,&#39;100&#39;)">
+																龙城
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;热血战歌&#39;,&#39;58&#39;,&#39;100&#39;)">
+																热血战歌
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;游龙仙侠传&#39;,&#39;59&#39;,&#39;10&#39;)">
+																游龙仙侠传
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;众神之箭&#39;,&#39;63&#39;,&#39;100&#39;)">
+																众神之箭
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;天问&#39;,&#39;64&#39;,&#39;10&#39;)">
+																天问
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;百战沙城&#39;,&#39;65&#39;,&#39;100&#39;)">
+																百战沙城
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;锦衣夜行&#39;,&#39;66&#39;,&#39;10&#39;)">
+																锦衣夜行
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;众神屠龙&#39;,&#39;67&#39;,&#39;100&#39;)">
+																众神屠龙
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;剑侠情缘2&#39;,&#39;68&#39;,&#39;10&#39;)">
+																剑侠情缘2
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;蛮荒之怒&#39;,&#39;69&#39;,&#39;100&#39;)">
+																蛮荒之怒
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;沙城战歌&#39;,&#39;70&#39;,&#39;100&#39;)">
+																沙城战歌
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;主宰西游&#39;,&#39;54&#39;,&#39;10&#39;)">
+																主宰西游
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;仙侠道2&#39;,&#39;53&#39;,&#39;10&#39;)">
+																仙侠道2
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;霸者之刃&#39;,&#39;38&#39;,&#39;100&#39;)">
+																霸者之刃
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;斩龙传奇&#39;,&#39;34&#39;,&#39;100&#39;)">
+																斩龙传奇
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;盛世三国2&#39;,&#39;35&#39;,&#39;10&#39;)">
+																盛世三国2
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;无上神兵&#39;,&#39;39&#39;,&#39;10&#39;)">
+																无上神兵
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;幻城&#39;,&#39;62&#39;,&#39;10&#39;)">
+																幻城
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;雷霆之怒&#39;,&#39;40&#39;,&#39;100&#39;)">
+																雷霆之怒
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;天书世界&#39;,&#39;42&#39;,&#39;10&#39;)">
+																天书世界
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;怒战&#39;,&#39;46&#39;,&#39;100&#39;)">
+																怒战
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;大战神&#39;,&#39;47&#39;,&#39;10&#39;)">
+																大战神
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;号令天下&#39;,&#39;48&#39;,&#39;10&#39;)">
+																号令天下
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;原始传奇&#39;,&#39;49&#39;,&#39;100&#39;)">
+																原始传奇
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;开天战神&#39;,&#39;50&#39;,&#39;100&#39;)">
+																开天战神
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;九阴绝学&#39;,&#39;51&#39;,&#39;10&#39;)">
+																九阴绝学
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;刺影传奇&#39;,&#39;52&#39;,&#39;100&#39;)">
+																刺影传奇
+															</li>
+															<li id="jt"
+																onclick="focusserver(&#39;霸王之心&#39;,&#39;71&#39;,&#39;100&#39;)">
+																霸王之心
+															</li>
+														</ul>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</li>
+											<li id="div_server"><span class="name">请选择服务器：</span><span
+													class="select_game"><div id="qfSet"><a href="javascript:void();">选择区服</a><b
+													></b></div></span>
+												<div id="cz_select_server" style="display: none;"><h3><span
+														onclick="close_all_sever_data2()"><img
+														src="pay/images/closed.gif"></span><a href="javascript:void();">请选择服务器</a>
+												</h3>
+													<div class="cz_sega_boxa">
+														<ul id="server_id1" class="all_servers"></ul>
+													</div>
+													<div id="Pagination" class="pagination"></div>
+												</div>
+											</li>
+											<div class="clear"></div>
+										</ul>
+									</div>
+								</div>
+								<div class="neiye_pay_left_infor_c_1" style="">
+									<div class="neiye_pay_left_infor_c_1_c">
+										<ul id="czzhbox">
+											<li id="youid" style="display: none; "><span
+													class="name">您充值的账号：</span><em></em></li>
+											<li id="youpintb" style="display: none; "><span class="name">您的平台币余额：</span><em><font>0</font>平台币</em>
+											</li>
+											<li id="czzh1" style=""><span id="cz_zh" class="name">您需要充值的帐号:</span><span
+													class="zh"><input type="text" name="member_name" id="member_name"
+																	  value="                  "
+																	  class="zhanghao"></span><em id="zhts1"></em></li>
+											<li id="czzh2" style=""><span id="qrcz_zh"
+																		  class="name">确认您充值的帐号:</span><span class="zh"><input
+													name="re_member_name" type="text" onkeyup="zhyits()"
+													id="re_member_name" value="                  "
+													class="zhanghao"></span><em id="zhts2"></em></li>
+											<div class="clear"></div>
+										</ul>
+									</div>
+								</div>
+								<div class="neiye_pay_left_infor_c_1 jebox" style="">
+									<div class="neiye_pay_left_infor_c_1_c">
+										<ul>
+											<li><span class="jename">充值金额：</span><span id="je_set"
+																					   class="select_game"><em><label><input
+													type="radio" onclick="ylsu2(10)" name="pay_amount" id="payje1"
+													value="10">10元</label></em><em><label><input type="radio"
+																								 onclick="ylsu2(30)"
+																								 name="pay_amount"
+																								 id="payje1" value="30">30元</label></em><em><label><input
+													type="radio" onclick="ylsu2(50)" name="pay_amount" id="payje1"
+													value="50">50元</label></em><em><label><input type="radio"
+																								 onclick="ylsu2(100)"
+																								 checked="checked"
+																								 name="pay_amount"
+																								 id="payje1"
+																								 value="100">100元</label></em><em><label><input
+													type="radio" onclick="ylsu2(200)" name="pay_amount" id="payje1"
+													value="200">200元</label></em><em><label><input type="radio"
+																								   onclick="ylsu2(300)"
+																								   name="pay_amount"
+																								   id="payje1"
+																								   value="300">300元</label></em><em><label><input
+													type="radio" onclick="ylsu2(500)" name="pay_amount" id="payje1"
+													value="500">500元</label></em><em><label><input type="radio"
+																								   onclick="ylsu2(1000)"
+																								   name="pay_amount"
+																								   id="payje1"
+																								   value="1000">1000元</label></em><em><label><input
+													type="radio" onclick="ylsu2(5000)" name="pay_amount" id="payje1"
+													value="5000">5000元</label></em><em class="otherje"><label><b><input
+													type="radio" name="pay_amount" id="payohterje"
+													value="">其他</b></label><span><input id="othermoney" type="text"
+																						onkeyup="ylsu(this)"
+																						name="oth_amount"
+																						onfocus="selorder();"
+																						class="jeother"></span><i>请输入(5-50000)之间的整数</i></em></span>
+											</li>
+											<li id="other_amount" style="display: none;"></li>
+											<li style="display: none;"><span class="name">对应<span
+													name="game_curr">元宝</span>数量： </span><span class="zh"
+																							   id="pay_amount_show"
+																							   style="line-height: 26px; color: red">NaN</span><span
+													style="color: red;">*兑换比例为1元=<span id="parcen">100</span><span
+													name="game_curr"></span></span></li>
+											<li id="ylsuname" class="ylhs">您将获得：<font id="dyyl">1000</font>元宝&nbsp;&nbsp;&nbsp;<span
+													id="pay_rate_input_fee" style="color:red;">兑换比例: 1:10</span></li>
+											<div class="clear"></div>
+										</ul>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div id="bank" style=""><span id="zggs"><label><input name="pay_bank" checked="checked"
+																					  type="radio" value="ICBC-NET-B2C"><a
+										href="javascript:selectbank(&#39;ICBC-NET-B2C&#39;);">中国工商银行</a></label></span><span
+										id="zgjh"><label><input name="pay_bank" type="radio" value="CCB-NET-B2C"><a
+										href="javascript:selectbank(&#39;CCB-NET-B2C&#39;);">中国建设银行</a></label></span><span
+										id="zgly"><label><input name="pay_bank" type="radio" value="ABC-NET-B2C"><a
+										href="javascript:selectbank(&#39;ABC-NET-B2C&#39;);">中国农业银行</a></label></span><span
+										id="zgzs"><label><input name="pay_bank" type="radio" value="CMBCHINA-NET-B2C"><a
+										href="javascript:selectbank(&#39;CMBCHINA-NET-B2C&#39;);">招商银行</a></label></span><span
+										id="zgyh"><label><input name="pay_bank" type="radio" value="BOC-NET-B2C"><a
+										href="javascript:selectbank(&#39;BOC-NET-B2C&#39;);">中国银行</a></label></span><span
+										id="zgjt"><label><input name="pay_bank" type="radio" value="BOCO-NET-B2C"><a
+										href="javascript:selectbank(&#39;BOCO-NET-B2C&#39;);">交通银行</a></label></span><span
+										id="zggd"><label><input name="pay_bank" type="radio" value="CEB-NET-B2C"><a
+										href="javascript:selectbank(&#39;CEB-NET-B2C&#39;);">中国光大银行</a></label></span><span
+										id="zgms"><label><input name="pay_bank" type="radio" value="CMBC-NET-B2C"><a
+										href="javascript:selectbank(&#39;CMBC-NET-B2C&#39;);">中国民生银行</a></label></span><span
+										id="zgxy"><label><input name="pay_bank" type="radio" value="CIB-NET-B2C"><a
+										href="javascript:selectbank(&#39;CIB-NET-B2C&#39;);">兴业银行</a></label></span><span
+										id="zgpf"><label><input name="pay_bank" type="radio" value="SPDB-NET-B2C"><a
+										href="javascript:selectbank(&#39;SPDB-NET-B2C&#39;);">浦发银行</a></label></span>
+									<!--<span id="zgdy"><label><input name="pay_bank" type="radio" value="HKBEA-NET-B2C"><a href="javascript:selectbank('HKBEA-NET-B2C');">东亚银行</a></label></span>--><span
+											id="zgzx"><label><input name="pay_bank" type="radio" value="ECITIC-NET-B2C"><a
+											href="javascript:selectbank(&#39;ECITIC-NET-B2C&#39;);">中信银行</a></label></span><span
+											id="szfz"><label><input name="pay_bank" type="radio" value="GDB-NET-B2C"><a
+											href="javascript:selectbank(&#39;GDB-NET-B2C&#39;);">广发银行</a></label></span><span
+											id="zgyz"><label><input name="pay_bank" type="radio" value="POST-NET-B2C"><a
+											href="javascript:selectbank(&#39;POST-NET-B2C&#39;);">中国邮政储蓄银行</a></label></span><span
+											id="zgpa"><label><input name="pay_bank" type="radio" value="PINGANBANK-NET"><a
+											href="javascript:selectbank(&#39;PINGANBANK-NET&#39;);">平安银行</a></label></span>
+									<!--<span id="zgbh"><label><input name="pay_bank" type="radio" value="CBHB-NET-B2C"><a href="javascript:selectbank('CBHB-NET-B2C');">渤海银行</a></label></span>--><span
+											id="zgbj"><label><input name="pay_bank" type="radio" value="BCCB-NET-B2C"><a
+											href="javascript:selectbank(&#39;BCCB-NET-B2C&#39;);">北京银行</a></label></span>
+									<!--<span id="zgnj"><label><input name="pay_bank" type="radio" value="NJCB-NET-B2C"><a href="javascript:selectbank('NJCB-NET-B2C');">南京银行</a></label></span>-->
+									<!--<span id="yeepay"><label><input name="pay_bank" type="radio" value="YJZF-NET-B2C"><a href="javascript:selectbank('YJZF-NET-B2C');" style="background:url(/Public/wancms3/images/yeepay.jpg) no-repeat;">易宝账号支付</a></label></span>-->
+								</div>
+								<div class="neiye_pay_left_infor_c_2" id="tjanniu" style="">
+									<div class="pay"><a href="javascript:$(this).unbind('click');alert('暂未开通')"
+														id="tjButton" class="tjBtn" onclick="tjtccon()">提交</a></div>
+								</div>
+								<div class="neiye_pay_left_infor_c_2" style="display: none;">
+									<div class="pay"><input type="text" name="trade_sn" id="trade_sn"><input
+											name="game_rate" type="hidden" id="game_rate" value="1"><input
+											name="pay_type" type="hidden" id="pay_type" value="yeepay"><input
+											name="pay_rate" type="hidden" id="pay_rate" value="100"><input
+											name="game_paytorole" type="hidden" id="game_paytorole" value="0"><input
+											name="re_game_rname" type="hidden" id="re_game_rname" value="0"><input
+											name="level_rate" type="hidden" id="level_rate" value=""><input name="act"
+																											type="hidden"
+																											id="act"
+																											value="topay"><input
+											type="submit" class="tjBtn"></div>
+								</div>
+								<div class="neiye_pay_left_infor_c_3" style="display: none;"><textarea name="" cols=""
+																									   rows=""
+																									   disabled="disabled"
+																									   class="text"
+																									   id="pay_type_content">只要您开通网上银行服务，足不出户即可实现快捷准确的帐号充值。请勿在此通道中使用其他方式充值。</textarea>
+								</div>
+								<div class="neiye_pay_left_infor_c_4" style="display: none;">
+									<ul class="huikuan_step_ul" id="tabs2">
+										<li class="huikuan_step_li  li"><a href="javascript:;" data-step="step_con_1"
+																		   class="huikuan_step_a huikuan_step_a_1 on"><b>1、获取汇款账号</b></a>
+										</li>
+										<li class="huikuan_step_li"><a href="javascript:;" data-step="step_con_2"
+																	   class="huikuan_step_a huikuan_step_a_2"><b>2、提供游戏信息</b></a>
+										</li>
+										<li class="huikuan_step_li"><a href="javascript:;" data-step="step_con_3"
+																	   class="huikuan_step_a huikuan_step_a_3"><b>3、客服确认汇款</b></a>
+										</li>
+										<li class="huikuan_step_li"><a href="javascript:;" data-step="step_con_4"
+																	   class="huikuan_step_a huikuan_step_a_4"><b>4、游戏查收元宝</b></a>
+										</li>
+									</ul>
+									<div id="tab_conbox2">
+										<div class="huikuan_step_con huikuan_step_con_1"
+											 style="font-size: 16px; display: block;"><p
+												style="padding:10px 0 0;font-size:16px;">请向官方银行充值账号汇款或转账。</p>
+											<table style=" border-style:solid; color:#7b7a7a;border-color:#fff;font-size:14px;"
+												   cellspacing="0px">
+												<tbody>
+												<tr style="background-color:#fcfaf1;height:30px;text-align:center;">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														开户地
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														开户行
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														账户
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a;padding:0 5px;">
+														卡号
+													</td>
+												</tr>
+												<tr style="height:30px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														深圳
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														建设银行深圳宝安支行
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														文旭梅
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a;padding:0 5px;">
+														6217 0072 0003 2995 659
+													</td>
+												</tr>
+												<tr style="height:30px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														深圳
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														农业银行深圳宝安支行营业部
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														文旭梅
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a;padding:0 5px;">
+														6228 4801 2833 9381 278
+													</td>
+												</tr>
+												<tr style="height:30px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														深圳
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														招商银行深圳分行建安支行
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;padding:0 5px;">
+														文旭梅
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a;padding:0 5px;">
+														6214 8575 5449 7158
+													</td>
+												</tr>
+												<tr style="height:30px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a;padding:0 5px;">
+														深圳
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a;padding:0 5px;">
+														工商银行深圳前进路支行
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a;padding:0 5px;">
+														文旭梅
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a;border-right:1px solid #7b7a7a;padding:0 5px;">
+														6212 2640 0002 0003 824
+													</td>
+												</tr>
+												</tbody>
+											</table>
+											<p style="padding:10px 0 0;">注意事项：由于银行方面的结算制度，会使人工汇款有可能出现延迟到账，如：</p>
+											<p>1、跨行汇款，例如：从建设银行汇款到工商银行的账户；<br>
+												2、跨地区汇款，例如：从北京汇到深圳；<br>
+												3、非银行结算时间段汇款，例如：周末或下午17:00以后。</p></div>
+										<div class="huikuan_step_con huikuan_step_con_2"
+											 style="margin: 0px; display: none;"><p
+												style="padding:20px 0 0;font-size:16px;">请联系<a
+												href="http://www.2lewan.com/service.html" class="huikuan_a"
+												target="_blank">充值客服</a>提供充值信息。
+											例如：</p>
+											<table style="color:#7b7a7a;border-color:#fff;font-size:16px;"
+												   class="huikuan_table" cellspacing="0px">
+												<tbody>
+												<tr style="height:28px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>游戏帐号</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														abcd
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>游戏名称</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a">
+														怒战
+													</td>
+												</tr>
+												<tr style="height:28px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>游戏区服</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														双线1服
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>游戏角色</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a">
+														abcd
+													</td>
+												</tr>
+												<tr style="height:28px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>充值银行</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														招商银行
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a">
+														<strong>充值金额</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a;border-right:1px solid #7b7a7a">
+														1000
+													</td>
+												</tr>
+												<tr style="height:28px">
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a">
+														<strong>真实姓名</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a">
+														张三峰
+													</td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a">
+														<strong>汇款地点</strong></td>
+													<td style=" border-color:#7b7a7a; border-top:1px solid #7b7a7a; border-left:1px solid #7b7a7a; border-bottom:1px solid #7b7a7a;border-right:1px solid #7b7a7a">
+														深圳
+													</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="huikuan_step_con huikuan_step_con_3"
+											 style="margin: 0px 0px 0px 160px; display: none;"><p
+												style="padding:5px 20px 0 0;float:left;"><img
+												src="pay/images/huikuan_ico_1.jpg" alt=""></p>
+											<p style="float:left;font-size:16px;">请玩家联系<a
+													href="http://www.2lewan.com/service.html" class="huikuan_a"
+													target="_blank">充值客服</a>确认是否汇款或转账成功。</p></div>
+										<div class="huikuan_step_con huikuan_step_con_4"
+											 style="margin: 0px 0px 0px 150px; display: none;"><p
+												style="padding:10px 15px 0 0;float:left;font-size:16px;"><img
+												src="pay/images/huikuan_ico_2.jpg" alt=""></p>
+											<p style="padding:90px 0 0;font-size:16px;">请玩家登录游戏查收游戏币。</p></div>
+									</div>
+								</div>
+							</div>
+							<div id="neiye_pay_left_infor_f"></div>
+							<div id="wxts">
+								<div class="tstop"></div>
+								<div class="tscon"><h1>温馨提示：</h1>
+									<p>银行卡支付说明：</p>
+									<p>1、您必须开通了网上银行业务；</p>
+									<p>2、网上银行开通办法请咨询当地所属银行；</p>
+									<p>3、请您关闭所有屏蔽弹出窗口之类的功能，否则在线支付将无法继续，比如：3721、上网助手、google toolbar、alexa
+										toolbar、baidu等；</p>
+									<p>4、如果您用信用卡支付，请确认该信用卡的网上交易限额大于等于您的充值金额；</p>
+									<p>5、请充值时务必确认好您的充值金额准确无误后再进行充值，避免输错金额导致的失误，如因未仔细确认金额造成的充值问题，我们将一律不予处理此类退款申诉。</p>
+								</div>
+								<div class="tsbottom"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="tj"></div>
+			</form>
+			<script src="pay/jquery.cookie.js" type="text/javascript"></script>
+			<script>$(document).ready(function () {
+				//登录
+				var $name = $.cookie('name');
+				if ($name) {
+					$('#member_name').val($name);
+					$('#re_member_name').val($name);
+				} else {
+					$('#member_name').val('');
+					$('#re_member_name').val('');
+				}
+				$.ajax({
+					type: 'post',
+					data: '',
+					url: "/pay/create_order",
+					error: function () {
+						$('#trade_sn').html("");
+					},
+					cache: false,
+					dataType: 'json',
+					success: function (data) {
+						$('#trade_sn').val(data.orderid);
+					}
+				});
+				$('#member_name').blur(function () {
+					var $username = $(this).val();
+					if ($username == '' || $username.length < 5) {
+						$("#zhts1").html("游戏账号不存在!");
+						return false;
+					} else {
+						$.ajax({
+							type: 'get',
+							data: 'username=' + $username,
+							dataType: 'json',
+							error: function () {
+								$("#zhts1").html("游戏账号不存在!");
+							},
+							success: function (data) {
+								if (data.flag == "1") {
+									$("#zhts1").html("<a style='color:green;'>恭喜你，游戏帐号正确</a>");
+									isUserSate = true;
+								}
+								else {
+									$("#zhts1").html("游戏账号不存在!");
+								}
+							},
+							url: "/pay/u_check"
+						})
+					}
+				})
+			})
+
+			//自动带服的情况下显示
+			getDataList(page_index);</script>
+			<div style="clear: both;"></div>
+			<div id="content_4">
+				<script type="text/javascript" src="pay/payJs.js"></script>
+				<div id="footer" style="text-align:center;">
+					<div style="float:right; width:180px;height:120px; padding-top:10px; text-align:right; padding-right:10px; ">
+						<a key="55068d01c274e77b9ec44a9f" logo_size="83x30" logo_type="realname"
+						   href="javascript:"
+						   target="_blank">
+							<script src="index/aq_auth.js"></script>
+							<b id="aqLogoCILJY" style="display: none;"></b><img src="index/sm_83x30.png" alt="安全联盟认证"
+																				width="83" height="30"
+																				style="border: none;"></a>
+						<script id="ebsgovicon" src="index/govicon.js" type="text/javascript" charset="utf-8"></script>
+						<a href="javascript:"><img
+								src="index/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="36"
+								height="50" border="0" style="border-width:0px;border:hidden; border:none;"></a>
+						<script type="text/javascript" src="index/iplookup.php"></script>
+					</div>
+					<div style="width:720px; height:130px; "><p><span><a href="javascript:">人才招聘</a><font>|</font><a
+							href="javascript:">法律声明</a><font>|</font><a
+							href="javascript:">商务合作</a><font>|</font><a
+							href="javascript:">关于我们</a><font>|</font><a
+							href="javascript:">免责声明</a><font>|</font><a
+							href="javascript:">客服中心</a><font>|</font></span></p>
+						<p>Copyright ©2017 深圳市趣虹科技有限公司 版权所有</p>
+						<p>粤ICP备14072621号 《网络文化经营许可证》粤网文[2014]2051-401号</p>
+						<p style="color:#999999">健康游戏忠告： 抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+						<p></p></div>
+					<style>
+						#footer p {
+							margin: 12px auto;
+						}
+					</style>
+				</div>
+			</div>
+		</div><!--<style type="text/css">
+#gg_l {
+left: 50%;
+margin-left: -799px;
+}
+.ggbanner_r {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:left;
+}
+.ggbanner_l {
+height:450px;
+top:6px;
+width:300px;
+overflow: hidden;
+z-index: 1;
+position: absolute;
+text-align:right;
+}
+#gg_r {
+left: 50%;
+margin-left: 496px;
+}
+
+</style><div id="gg_r" class="ggbanner_r"><a target="_blank" href=""><img border="0"  src=""></a></div><div id="gg_l" class="ggbanner_l"><a target="_blank" href=""><img  border="0" src=""></a></div>-->
+	</div>
+</div>
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;">
+	<div id="trans-tooltip">
+		<div id="tip-left-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png&quot;);"></div>
+		<div id="tip-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png&quot;) repeat-x;"></div>
+		<div id="tip-right-top"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png&quot;);"></div>
+		<div id="tip-right"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png&quot;) repeat-y;"></div>
+		<div id="tip-right-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png&quot;);"></div>
+		<div id="tip-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div>
+		<div id="tip-left-bottom"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png&quot;);"></div>
+		<div id="tip-left"
+			 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png&quot;);"></div>
+		<div id="trans-content"></div>
+	</div>
+	<div id="tip-arrow-bottom"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png&quot;);"></div>
+	<div id="tip-arrow-top"
+		 style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png&quot;);"></div>
+</div>
+</body>
+</html>
